@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #f3c200;
 }
 section#pratos{
     display: flex;
@@ -78,8 +78,25 @@ section#pratos{
     opacity: 1;
 }
 
+#sobrenos {
+display: flex;
+justify-content: space-between;
+height: 300px;
+background-color: #f3c200;
+}
 .sobre {
-    
+    max-width: 60%;
+    font-size: 20px;
+}
+
+.sobreimg {
+    max-width: 40%;
+}
+
+.sobreimg img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 footer {
