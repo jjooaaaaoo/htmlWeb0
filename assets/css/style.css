@@ -2,10 +2,10 @@ body {
     font-family: 'Georgia', serif;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing:border-box;
     background-color: #fdf0d5;
 }
-
+/*essa seção body espeicifca a fonte a ser usada no documento inteiro, aplica 0 de margin e padding globalmente e soluciona o problema do box model padrão, adaptando ele pare considerar o padding e o border do elemento. também adiciona a cor geral do fundo do site*/
 header {
     padding: 20px;
     text-align: center;
@@ -14,12 +14,13 @@ header {
     background: #780000;
     color: #fdf0d5;
 }
+/*estiliza o elemento da header, adicionando padding, centralizando o texto e dando o tamanho da fonte. Também altera o texto para deixar maiúscula toda primeira letra. altera a cor da header para algo com maior contraste.*/
 
 .heading a {
     margin: 0px 20px;
     text-decoration: none;
     color: #fdf0d5;
-}
+}/* decora o título(e tira as decorações padrões de hyperlink dele)*/
 
 nav ul {
     list-style: none;
@@ -43,6 +44,7 @@ nav a {
 nav a:hover {
     color: #ffda47;
 }
+/*as 4 estilizações anteriores são responsáveis pela aparência do menu de navegação. remove o estilo de lista e adapta o display para uma tabela com apresentação inline. também remove as underlines, e adiciona uma transição de cor caso passem o mouse por cima*/
 #pratos{
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +57,7 @@ nav a:hover {
     padding: 10px;
     font-size: 35px;
 }
+/*estiliza a seção dos pratos. usa flex-wrap para permitir que os itens dentro da seção possam quebrar para várias linhas. no caso da seção, elas são alinhdas da esquerda pra direita, numa abordagem topdown. também estiliza como essas caixas serão alinhadas, com espaço separado igualmente entre elas.*/
 .container {
     position:relative;
     width: 300px;
@@ -87,6 +90,7 @@ nav a:hover {
 .container:hover .overlay {
     opacity: 1;
 }
+/*as seções acima estilizam os containers da parte dos pratos. selecionam largura altura, margens e posições; também definem estilos para o que acontecer quando o mouse passa por cima das imagens, com uma transição leve que mostra o nome do prato.*/
 
 #sobrenos {
     display: flex;
@@ -122,6 +126,7 @@ nav a:hover {
     object-fit: cover;
     display: block;
 }
+/*estiliza toda a seção "sobre nós" do html,que inclui texto e uma imagem. faz com que a imagem mantenha sua proporção correta e se adapte para todos os formatos de tela. o mesmo acontece com o texto, que possui overflow para caso não possa ser exibido completmente.*/
 #espaco{
     align-items: center;
     display: flex;
@@ -146,12 +151,18 @@ nav a:hover {
     align-content: stretch;
     justify-content: space-around;
 }
-
+.espacotexto{
+    text-align:inherit;
+}
+.tamespaco {
+    font-size: 30px;
+}
 @media (min-width: 768px){
     .espacoitem{
         width: 500px;
     }
 }
+/*estiliza a seção "espaço" do html, novamente se beneficiando do flexbox para adpatar o conteúdo para mais de uma linha, caso necessário. define estilo para todas as imagens e seus textos associados e aplica uma regra para telas com largura maior que 768 pixels(geralmente telas de monitor de computador).*/
 .precos-div{
     display: flex;
     flex-wrap: wrap;
@@ -172,12 +183,7 @@ nav a:hover {
     padding: 10px;
     text-align: center;
 }
-.espacotexto{
-    text-align:inherit;
-}
-.tamespaco {
-    font-size: 30px;
-}
+/* estiliza a seção de preços, usando do flexbox para adaptar novamente a formatação da lista de preços. estiliza corretamente o título, preços e valores individuais.*/
 #avaliacoes {
     padding: 20px;
     text-align: center;
@@ -210,6 +216,7 @@ nav a:hover {
     font-size: 16px;
     color: #333; /* Adjust the color as needed */
 }
+/*estiliza a seção de avaliações, adicionando bordas, padding, uma cor diferente para o background das avaliacões(com o intuito de melhor legibilidade) e corrige o alinhamento do texto. Novamente, sem perder a linha geral do tema do site.*/
 #contato {
     padding: 20px;
     text-align: center;
@@ -223,10 +230,10 @@ nav a:hover {
 }
 #contato p {
     font-size: 18px;
-    color: #000; /* Adjust the color as needed */
+    color: #000;
     margin: 10px 0;
 }
-
+/*estiliza a seção de contatos, configurando padding, alinhamento e tmanho de fonte. muda a cor da fonte também, para ficar bonitinho.*/
 footer {
     background: #780000;
     color: #fdf0d5;
@@ -236,3 +243,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/*estiliza o rodapé, adicionando uma cor de fundo igual à do cabeçalhom alinhando o texto e a cor de fundo, além do padding. obviamente, trava a posiçao dele no fundo da página e bota sua largura como 100%, para ocupar toda a largura da página.*/
