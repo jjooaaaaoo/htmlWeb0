@@ -50,6 +50,10 @@ nav a:hover {
     align-items: center;
     justify-content: space-evenly;
 }
+.pratos-titulo{
+    text-align: center;
+    font-size: 30px;    
+}
 .container {
     position:relative;
     width: 300px;
@@ -92,6 +96,8 @@ nav a:hover {
 .sobretitulo{
     padding: 0 25px;
     margin:40px;
+    font-size: 34px;
+    font-weight: bold;
 }
 .sobre {
     max-width: 60%;
