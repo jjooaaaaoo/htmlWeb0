@@ -196,7 +196,7 @@ nav a:hover {
 }
 #avaliacoes p {
     font-size: 18px;
-    color: #000; /* Adjust the color as needed */
+    color: #000;
     margin: 10px 0;
 }
 .aval {
@@ -214,7 +214,7 @@ nav a:hover {
 
 .aval-texto {
     font-size: 16px;
-    color: #333; /* Adjust the color as needed */
+    color: #333;
 }
 /*estiliza a seção de avaliações, adicionando bordas, padding, uma cor diferente para o background das avaliacões(com o intuito de melhor legibilidade) e corrige o alinhamento do texto. Novamente, sem perder a linha geral do tema do site.*/
 #contato {
