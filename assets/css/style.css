@@ -56,6 +56,8 @@ nav a:hover {
     margin: 20px;
     padding: 10px;
     font-size: 35px;
+    width: 100%;
+    text-align: center;
 }
 /*estiliza a seção dos pratos. usa flex-wrap para permitir que os itens dentro da seção possam quebrar para várias linhas. no caso da seção, elas são alinhdas da esquerda pra direita, numa abordagem topdown. também estiliza como essas caixas serão alinhadas, com espaço separado igualmente entre elas.*/
 .container {
